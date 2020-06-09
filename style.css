@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,600,300);
+
+body {
+	background: #eee;
+	margin:0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+hr {
+	border:0;
+	background:#dedede;
+	height:1px;
+}		
+
+header{
+	text-align: center;
+	color: #232323;
+}
+
+header .judul{
+	font-size: 17pt;
+}
+
+header .deskripsi{
+	font-size: 11pt;
+}
+
+.wrap {
+	max-width: 100%;
+	margin:25px auto;
+}
+
+/* Maksimum ukuran kolom, kapan kolom pindah jadi baris di halaman */
+@media (max-width: 600px) {
+	.flex-container {
+		/* float:left; */
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	
+  }
+
+
+.flex-container .flex-item {
+	flex-basis: 100%;
+	width: 40%;
+	height: 100%;
+	display: inline-block;
+	padding:25px;
+	margin:4px;
+	background:#fff;
+	border-bottom: 2px solid #fff;
+	transition: all 0.5s ease;
+}
+
+
+.skills .widget h2 {
+	padding:0;
+	margin:0 0 15px;
+	color:#3498db;
+	font-size: 18px;
+	font-weight:800;
+	text-transform: uppercase;
+}
+
+.skills .widget p {
+	font-size: 14px;
+}
+
+.skills .widget p:last-child {
+	margin:0;
+}
+
+
